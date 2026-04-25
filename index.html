@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dist.cs</title>
+  <meta name="description" content="dist.cs portfolio website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.27/Tone.min.js"></script>
+</head>
+<body>
+  <div id="p5-container" aria-hidden="true"></div>
+
+  <main class="landing" aria-label="Landing page"></main>
+
+  <div id="overlayPanel" class="overlay" aria-hidden="true">
+    <div class="overlay-backdrop" id="overlayBackdrop"></div>
+    <div class="panel-shell">
+      <aside class="panel-topbar">
+        <nav class="anchor-nav" aria-label="Portfolio sections">
+          <a href="#selected-works">Selected Works</a>
+          <a href="#pen-plotter">Pen Plotter</a>
+          <a href="#prints">Prints</a>
+          <a href="#about">About</a>
+        </nav>
+        <button id="closePanel" class="close-button" aria-label="Close panel">&times;</button>
+      </aside>
+
+      <div class="panel-scroll" id="panelScroll">
+        <section class="site-note" aria-label="Website update">
+          <p>Hello! We are currently renewing our website. We have gathered a selection of recent works below, and we will be uploading our full archive soon. In the meantime, feel free to email us at <a href="mailto:distcollective@gmail.com">distcollective@gmail.com</a> or follow our social media accounts to see what we are currently working on.</p>
+        </section>
+
+        <section class="section-block">
+        <div id="selected-works" class="section-heading-grid subsection-heading">
+        <h2>Selected Works</h2>
+         </div>
+
+          <article class="project project-video">
+            <div class="project-media full-width-media ratio-video">
+              <iframe
+  src="https://player.vimeo.com/video/1175842094?badge=0&amp;autopause=0&amp;title=0&amp;byline=0&amp;portrait=0"
+  title="Dissonant Oscillations"
+  allow="autoplay; fullscreen; picture-in-picture"
+  allowfullscreen>
+</iframe>
+            </div>
+            <div class="project-content two-col-info">
+              <div class="meta-col">
+                <h3>Dissonant Oscillations</h3>
+                <div class="project-facts">
+                  <p><span>Type</span>Algorithmic Artwork on Layer Canvas</p>
+                  <p><span>Tools</span>Javascript &amp; GLSL</p>
+                  <p><span>Date</span>2025</p>
+                  <p><span>Artist</span>dist.cs (Ilgın İçözü &amp; Bilge Günay İçözü)</p>
+                  <p><span>Source</span><a href="https://layer.art/artists/distcs/artworks/dissonant-oscillation" target="_blank" rel="noreferrer">layer.art/artists/distcs/artworks/dissonant-oscillation</a></p>
+                </div>
+              </div>
+              <div class="text-col">
+                <p>Dissonant Oscillation by dist.cs is a generative code-based work that captures a quiet dialogue between tension and release. Gradient hues drift across the canvas in steady, pulsing motion, with subtle shifts that create a sense of perpetual transition.</p>
+                <p>The work combines feedback loops and chromatic aberration to produce a visual field that feels both restrained and expansive. What emerges is a meditative surface where contrast becomes cohesion, and where dissonance is not resolved, but held in balance.</p>
+                <p>The piece invites sustained attention, rewarding the viewer with an ever-evolving image that resists final form while maintaining an internal sense of wholeness.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-video">
+            <div class="project-media full-width-media ratio-video">
+              <iframe src="https://www.youtube.com/embed/BPTy3lZ6Z_Q"
+                title="Udnē, Art Basel Miami Beach 2022"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+            <div class="project-content two-col-info">
+              <div class="meta-col">
+                <h3>Udnē, Art Basel Miami Beach 2022</h3>
+                <div class="project-facts">
+                  <p><span>Type</span>Long-form Generative System</p>
+                  <p><span>Tools</span>p5.js</p>
+                  <p><span>Date</span>2022</p>
+                  <p><span>Developed for</span>fxhash interactive minting experience at Performance in Code: Deciphering Value in Generative Art, Art Basel Miami Beach</p>
+                  <p><span>Artist</span>dist.cs (Ilgın İçözü &amp; Bilge Günay İçözü)</p>
+                  <p><span>Source</span><a href="https://tezos.com/events/art-basel-miami-beach" target="_blank" rel="noreferrer">tezos.com/events/art-basel-mi-beach</a></p>
+                  <p><span>Project</span><a href="https://www.fxhash.xyz/project/udne" target="_blank" rel="noreferrer">fxhash.xyz/project/udne</a></p>
+                </div>
+              </div>
+              <div class="text-col">
+                <p>Udnē is part of the fxhash interactive minting experience at Performance in Code: Deciphering Value in Generative Art, presented during Art Basel Miami Beach 2022.</p>
+                <p>The work is a collection of asymmetric textural compositions shaped through a search for harmony and disharmony. By combining three colors with three unsynchronized mathematical equations, Udnē explores the visual tension of triadic structures while bringing together contrasting textures in non-figurative scenes.</p>
+                <p>The resulting compositions reflect the layered relationship between integrated and opposing textures across both micro and macro scales, drawing from perceptual contrasts found in everyday environments.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-media full-width-media gallery-grid gallery-grid-3 morphosis-gallery">
+              <img src="assets/Morphosis.jpg" alt="Morphosis placeholder 1"/>
+              <img src="assets/Morphosis2.jpg" alt="Morphosis placeholder 2" />
+              <img src="assets/Morphosis1.jpg" alt="Morphosis placeholder 3" />
+              <img src="assets/Morphosis4.jpg" alt="Morphosis placeholder 4" />
+              <img src="assets/Morphosis3.jpg" alt="Morphosis placeholder 5" />
+              <img src="assets/Morphosis5.jpg" alt="Morphosis placeholder 6" />
+            </div>
+            <div class="project-content two-col-info">
+              <div class="meta-col">
+                <h3>Morphosis</h3>
+                <div class="project-facts">
+                  <p><span>Type</span>Curated Generative Artworks</p>
+                  <p><span>Tools</span>p5.js</p>
+                  <p><span>Date</span>2022</p>
+                  <p><span>Developed for</span> Akbank Sanat’s exhibition ‘Now In Digital Art - Alternate Realities</p>
+                  <p><span>Artist</span>dist.cs (Ilgın İçözü &amp; Bilge Günay İçözü)</p>
+                  <p><span>Source</span><a href="https://www.akbanksanat.com/sergi/dijital-sanatta-simdi-alternatif-gerceklikler-nft" target="_blank" rel="noreferrer">Now in Digital Art: Alternate Realities</a></p>
+                </div>
+              </div>
+              <div class="text-col">
+                <p>Morphosis is an exclusive series for Akbank Sanat’s exhibition ‘Now In Digital Art - Alternate Realities + NFT’ curated by Zeynep Arınç and NFT curation consultancy by Selçuk Artut.</p>
+                <p>Who am I? What will your virtual self look like? How will you sound? You don’t need a body; you can be a floating point of view. You can be the mad hatter or you can be the teapot; you can move back and forth to the rhythm of a song. You can be a tiny droplet in the rain or in the river; you can be what you thought you ought to be all along.</p>
+                <p>In every sense, we are too far from Leonardo da Vinci's Vitruvian Man. Since Vitruvian Man was drawn in the journals of Leonardo in 15th century, man’s relation with both himself and the universe has gained a new dimension. While humans shape the technology, we also witness that it is in turn shaped by it. While our ways of living, thinking and being change rapidly, we all feel that we have stepped into a new phase in our lives and we are constantly updated, upgraded and learning to adapt to this rapid change.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-media full-width-media gallery-grid gallery-grid-3">
+              <img src="assets/Sediment.jpg" alt="Sediments &amp; Diagenesis placeholder 1" />
+              <img src="assets/Sediment1.jpg" alt="Sediments &amp; Diagenesis placeholder 2" />
+              <img src="assets/Sediment2.jpg" alt="Sediments &amp; Diagenesis placeholder 3" />
+              <img src="assets/Sediment9.jpg" alt="Sediments &amp; Diagenesis placeholder 4" />
+              <img src="assets/Sediment4.jpg" alt="Sediments &amp; Diagenesis placeholder 5" />
+              <img src="assets/Sediment5.jpg" alt="Sediments &amp; Diagenesis placeholder 6" />
+              <img src="assets/Sediment6.jpg" alt="Sediments &amp; Diagenesis placeholder 7" />
+              <img src="assets/Sediment7.jpg" alt="Sediments &amp; Diagenesis placeholder 8" />
+              <img src="assets/Sediment3.jpg" alt="Sediments &amp; Diagenesis placeholder 9" />
+
+            </div>
+            <div class="project-content two-col-info">
+              <div class="meta-col">
+                <h3>Sediments &amp; Diagenesis</h3>
+                <div class="project-facts">
+                  <p><span>Type</span>Creative Coding, Generative Artwork</p>
+                  <p><span>Tools</span>p5.js</p>
+                  <p><span>Date</span>2024</p>
+                  <p><span>Artist</span>dist.cs (Ilgın İçözü &amp; Bilge Günay İçözü)</p>
+                  <p><span>Exhibited at</span>Galerie Data, Paris, France</p>
+                  <p><span>Source</span><a href="https://www.galeriedata.com/en/blogs/expositions/miner-l" target="_blank" rel="noreferrer">MINER△L</a></p>
+                </div>
+              </div>
+              <div class="text-col">
+                <p>Sediments &amp; Diagenesis is a two-part collection that explores the world of geological formations and processes. This collection offers a visual journey through the three primary rock types and the transformative process of diagenesis, presenting a unique and amplified view into the earth's fundamental elements.</p>
+                <p><strong>Part I: Sediments</strong></p>
+                <p>The first part of the collection, Sediments, includes three artworks, each symbolizing one of the three fundamental rock types: Sedimentary, Igneous (Magmatic), and Metamorphic. These pieces are crafted using mixed media, combining alcohol ink and WebGL shaders. The artworks highlight the diversity and complexity of the natural world, capturing the essence of geological formations with remarkable detail.</p>
+                <p><strong>Part II: Diagenesis</strong></p>
+                <p>The second part of the collection, Diagenesis, concentrates on the physical and chemical changes that sediments undergo. This two-work series, created with p5.js and WebGL shaders, offers a detailed and amplified view of the diagenesis process. Viewers have the opportunity to observe the intricate chemical and physical transformations of sediments, providing insight into the subtle and powerful forces that mold the earth.</p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="prints-plotter" class="section-block">
+          <div id="pen-plotter" class="section-heading-grid subsection-heading">
+            <h2>Pen Plotter</h2>
+          </div>
+
+          <article class="project">
+            <div class="project-media full-width-media gallery-grid gallery-grid-3">
+              <img src="assets/Penplotter.jpg" alt="Pen Plotter artwork 1" />
+              <img src="assets/Penplotter1.jpg" alt="Pen Plotter artwork 2" />
+              <img src="assets/Penplotter2.jpg" alt="Pen Plotter artwork 3" />
+              <img src="assets/Penplotter3.jpg" alt="Pen Plotter artwork 4" />
+              <img src="assets/Penplotter5.jpg" alt="Pen Plotter artwork 5" />
+              <img src="assets/Penplotter6.jpg" alt="Pen Plotter artwork 6" />
+              <img src="assets/Penplotter7.jpg" alt="Pen Plotter artwork 7" />
+              <img src="assets/Penplotter8.jpg" alt="Pen Plotter artwork 8" />
+              <img src="assets/Penplotter9.jpg" alt="Pen Plotter artwork 9" />
+            </div>
+
+            <div class="project-content two-col-info">
+              <div class="meta-col">
+                <h3>Pen Plotter</h3>
+                <div class="project-facts">
+                  <p><span>Type</span>Pen Plotter Works</p>
+                  <p><span>Tools</span>Processing, p5.js, AxiDraw</p>
+                  <p><span>Artist</span>dist.cs (Ilgın İçözü &amp; Bilge Günay İçözü)</p>
+                  <p><span>Shop</span><a href="https://store.distcs.xyz/printshop" target="_blank" rel="noreferrer">Pen Plotter Shop</a></p>
+                </div>
+              </div>
+
+              <div class="text-col">
+                <p>All pen plotter works are created with the AxiDraw A3 using creative coding, transforming digital pieces into tangible forms. At the core of this practice lies an exploration of how simple geometric elements—particularly lines—can be arranged to produce complex visual textures. By repeating the same basic shape and altering only its placement, orientation, or density, each piece is a study in perception, pattern, and depth. This method allows us to discover and observe how shapes form patterns and textures by simply starting from a fixed rule or shape.</p>
+                <p>Each piece is a collaboration between artist and machine, embracing the unpredictability and errors of the plotting process. This highlights the beauty of working with a machine—fostering a shared rhythm between artist and machine and finding harmony in both error and precision. These “mistakes” are integral to the artwork, enriching the creative journey and blending human intention with machine precision.</p>
+                <p>By integrating plotting errors in our work, we explore the balance between control and serendipity, making each piece a unique outcome of human creativity and mechanical execution. The resulting textures are rich and varied, offering a visual and tactile experience that resonates with nature's organic complexity.</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="section-subdivider" aria-hidden="true"></div>
+
+          <div id="prints" class="section-heading-grid subsection-heading">
+            <h2>Prints</h2>
+          </div>
+
+          <article class="project">
+            <div class="project-media full-width-media gallery-grid gallery-grid-3">
+              <img src="assets/Prints4.jpg" alt="Print artwork 1" />
+              <img src="assets/Prints2.jpg" alt="Print artwork 2" />
+              <img src="assets/Prints3.jpg" alt="Print artwork 3" />
+              <img src="assets/Prints1.jpg" alt="Print artwork 4" />
+              <img src="assets/Prints5.jpg" alt="Print artwork 5" />
+              <img src="assets/Prints6.jpg" alt="Print artwork 6" />
+              <img src="assets/Prints7.jpg" alt="Print artwork 7" />
+              <img src="assets/Prints8.jpg" alt="Print artwork 8" />
+              <img src="assets/Prints9.jpg" alt="Print artwork 9" />
+            </div>
+
+            <div class="project-content two-col-info">
+              <div class="meta-col">
+                <h3>Prints</h3>
+                <div class="project-facts">
+                  <p><span>Type</span>Prints</p>
+                  <p><span>Tools</span>Processing, p5.js</p>
+                  <p><span>Artist</span>dist.cs (Ilgın İçözü &amp; Bilge Günay İçözü)</p>
+                </div>
+              </div>
+
+              <div class="text-col">
+                <p>Each printed work is carefully curated from a generative system, with the selected editions chosen for how clearly they express the distinct character, beauty, and internal structure of the algorithm. While the images originate in a digital environment through creative coding, the printing process becomes an essential part of their formation.</p>
+                <p>As the work shifts from screen to physical material, subtle and intricate textures appear, transforming the image and giving it a unique surface presence. Through this transition, each work takes shape again, becoming something beyond its digital origin.</p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- <section id="generative-systems" class="section-block is-hidden" hidden aria-hidden="true">
+          <div class="section-heading-grid">
+            <h2>Generative Systems</h2>
+          </div>
+          <div id="collections-root" class="collections-root"></div>
+        </section>
+
+        <section id="one-of-one" class="section-block is-hidden" hidden aria-hidden="true">
+          <div class="section-heading-grid">
+            <h2>1/1 Works</h2>
+          </div>
+          <div class="irregular-grid full-width-media">
+            <img class="span-tall" src="assets/Unique.JPG" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique1.jpg" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique2.jpg" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique3.png" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique4.png" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique5.png" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique6.png" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique7.png" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique8.png" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique9.png" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique10.png" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique11.jpg" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique12.png" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique13.png" alt="1/1 work placeholder 1" />
+            <img class="span-wide" src="assets/Unique14.png" alt="1/1 work placeholder 1" />
+            <img class="span-tall" src="assets/Unique15.png" alt="1/1 work placeholder 1" />
+          </div>
+        </section> -->
+
+        <section class="section-block about-block about-single-column">
+        <div id="about" class="section-heading-grid subsection-heading">
+        <h2>About</h2>
+        </div>
+
+          <div class="about-flow">
+            <h3>dist.cs</h3>
+
+            <div class="about-copy">
+              <p>dist is a creative studio formed by an artist duo founded by multimedia artists Bilge Günay Icozu and Ilgın Icozu. Their practice investigates the relationships between nature and human-made structures and the ways these forces converge through computational processes and precision.</p>
+              <p>Working across music, animation, audiovisual design through generative art, they use technology as a partner in creation: building systems that allow patterns, textures and behaviors to emerge rather than be strictly predetermined. Through generative algorithms, they shape randomness into organic forms, translating natural phenomena into digital language while preserving a sense of intuition, imperfection and growth.</p>
+              <p>At the core of their process is an ongoing dialogue with computation: a way of learning from the logic of systems, the mathematics embedded in nature and the unexpected results that arise from rule-based experimentation. dist seeks a balance between the natural and the synthetic - developing new ways of expressing what can be considered “organic” and exploring phenomena that are native to the digital realm.</p>
+              <p>Their first exhibition as a duo was presented at Akbank Sanat in Istanbul in 2022. They later participated in Art Basel Miami 2022 in collaboration with the Tezos Foundation, presenting an interactive exhibition featuring a live minting experience for a long-form generative collection. In 2023, they took part in Proof of People’s live minting experience in New York, again presenting their long-form generative work. Their artworks have since been exhibited in fairs and galleries across Turkey, the United States, the United Kingdom, France, Spain, and Italy.</p>
+            </div>
+
+            <h3>Selected exhibitions</h3>
+            <ul class="about-inline-list">
+              <li>2026, ODTU Sanat 70. Yıl, Ankara, Turkey</li>
+              <li>2025, NXT Festival, Sevilla, Spain</li>
+              <li>2025, Noise Media Art, Istanbul, Turkey</li>
+              <li>2025, Na Xanela, Que Facemos!?, Galicia, Spain</li>
+              <li>2023, MINERAL, Galerie Data, Paris, France</li>
+              <li>2023, The Generative Art Corner, Vertical CyrptoArt, Rome, Italy</li>
+              <li>2023, Proof of People x Refraction, Vertical CyrptoArt, New York, United States</li>
+              <li>2023, Companions of Code, Vertical CyrptoArt x The NFT Gallery, London, United Kingdom</li>
+              <li>2023, Seçici İletken, Contemporary Istanbul Foundation, Istanbul, Turkey</li>
+              <li>2022, Art Basel Miami Beach, Art Basel &amp; Tezos Foundation &amp; fx(hash), Miami, United States</li>
+              <li>2022, NFT Show Europe, NFT Show Europe, Valencia, Spain</li>
+              <li>2022, Now in digital Art and Alternate Realities + NFT, Akbank Sanat, Istanbul, Turkey</li>
+              <li>2021, Contemporary Istanbul, De Artium, Istanbul, Turkey</li>
+            </ul>
+
+            <h3>Selected Media and Press</h3>
+            <ul class="about-inline-list">
+              <li>2024, <a href="https://www.forbes.com/sites/digital-assets/2023/10/30/web3-travel-guides-the-parisian-crypto-art-scene" target="_blank" rel="noreferrer">Forbes, Ana Maria Caballero, “Web3 Travel Guides: The Parisian Crypto Art Scene”</a></li>
+              <li>2023, <a href="https://artdogistanbul.com/secici-iletken-fisekhanede" target="_blank" rel="noreferrer">Artdog Istanbul, Contemporary Istanbul Vakfı'nın sergisi “Seçici İletken” Fişekhane’de</a></li>
+              <li>2023, <a href="https://www.blockchainshoweurope.com/conferences" target="_blank" rel="noreferrer">Panel Discussion, “Synergies: Expanding artistic frontiers”</a></li>
+              <li>2022, <a href="https://www.youtube.com/watch?v=wCrYedIZOSU" target="_blank" rel="noreferrer">Interview, Art Basel Miami Beach 2022, “Inside the Algorithm: Meet the Artists”</a></li>
+              <li>2022, <a href="https://aposto.com/i/pikselbulten9" target="_blank" rel="noreferrer">Pixel.Bulten, Art Basel Miami ve Art Week, “Piksel.Bulten #9”</a></li>
+              <li>2022, <a href="https://www.youtube.com/watch?v=Tfq-Nc1QG0s" target="_blank" rel="noreferrer">Interview, Akbank Sanat, “Jeneratif Sanat (Generative Art) ve Yeni Bir Alan Olarak NFT”</a></li>
+              <li>2022, <a href="https://www.youtube.com/watch?v=gX2VoT7GjKY" target="_blank" rel="noreferrer">Interview, Akbank Sanat, “NFT’yi Sanatçılara Sorduk”</a></li>
+              <li>2022, <a href="https://www.akbanksanat.com/en/exhibition/dijital-sanatta-simdi-alternatif-gerceklikler-nft" target="_blank" rel="noreferrer">Akbank Sanat, “Now in Digital Art: Alternate Realities + NFT”</a></li>
+            </ul>
+
+            <h3>Residencies</h3>
+            <ul class="about-inline-list">
+              <li>2023, Vertical Crypto Art Residency, Vertical Crypto Art, Online</li>
+            </ul>
+
+            <h3>Socials</h3>
+            <ul class="about-inline-list">
+              <li><a href="https://x.com/dist_cs" target="_blank" rel="noreferrer">X</a></li>
+              <li><a href="https://www.instagram.com/dist.cs" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://www.youtube.com/@tension.release" target="_blank" rel="noreferrer">YouTube</a></li>
+            </ul>
+
+            <p class="contact-line">Get in touch via <a href="mailto:distcollective@gmail.com">distcollective@gmail.com</a></p>
+          </div>
+        </section>
+      </div>
+
+      <footer class="panel-footer">dist.cs 2026</footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
